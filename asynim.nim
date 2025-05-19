@@ -23,7 +23,7 @@ proc notFound(content: string): Future[string] {.async.} =
 
 
 proc getApiPage(path: string, r: Request): Future[string] {.async.} =
-  ## Продумайте эндпоинты для всех атрибутов соответствующих объектов
+  ## Продумайте эндпоинты для всех атрибутов соответствующих объектов и самих объектов
   ## Например, /api/v1/shop показывает эндпоинты: {"Cash": "url": "/api/v1/shop/cash", "Staff": ...}
   ## А /api/v1/shop/cash отображает 10 PLACEHOLD элементов: {"ID": 1, "url": "/api/v1/shop/cash/1"}
   ## /api/v1/shop/cash/1 отображает подробную информацию о кассе
